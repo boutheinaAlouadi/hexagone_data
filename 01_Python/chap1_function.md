@@ -67,13 +67,21 @@ if letter == 'e':
     print(f"find {e}")
 ```
 
-1. Soit la liste words suivante créez une fonction **search_letter**, elle retournera une liste avec le mot (nombre) recherché.
+*Remarque le print ci-dessus utilise la syntaxe format pour interpréter les valeurs dans une chaîne de caractères.*
+
+```python
+d = 1789
+f"Date de la révolution {d}"
+# 'Date de la révolution 1789'
+```
+
+1. Soit la liste collection suivante créez une fonction **search_letter**, elle retournera une liste avec le premier mot (nombre) recherché, ou une liste vide si elle n'a rien trouvé.
 
 ```python
 collection = [1, 2, 5, 9, 11, 6, 7, 8, 1, 2, 6, 7, 6, 7, 8, 6, 7, 8 , 23, 0]
 ```
 
-2. Améloriez cette fonction en donnant la position de l'élément rechercher dans la liste. Utilisez un enumerate sur la liste pour avoir l'indice de chaque lettre, dans ce cas Python affecte les variables indice et valeur de la collection par unpacking (déballage) :
+2. Améloriez cette fonction en donnant la position du premier élément rechercher dans la liste. Utilisez la fonction enumerate sur la liste collection elle-même pour avoir l'indice de chaque lettre. Voyez l'exemple qui suit pour enumerate :
 
 ```python
 collection = [1, 2, 3, 4, 5, 6]
@@ -83,13 +91,13 @@ for pos, letter in enumerate( collection ):
     print(letter)
 ```
 
-Vous pouvez dans ce cas utiliser une deuxième structure de données le tuple, c'est un type immutable permettant de représenter des vecteurs de données :
+Pour récupérer la position et la valeur de l'élément dans la liste utilisez la structure de données tuple de Python :
 
 ```python
-coordinate = (1, 2)
+coordinate = (1, 2) # (pos, val)
 ```
 
-Mais idéalement, dans ce contetxe, si on veut stocker cette information on utilisera un dictionnaire, les clés sont des valeurs immuables : 
+On peut également utiliser un dictionnaire pour récupérer cette information :
 
 ```python
 search = { 'pos' : 1, 'val' : 2 }
@@ -97,15 +105,15 @@ search = { 'pos' : 1, 'val' : 2 }
 
 ### Exercice recherche de toute(s) les occurences d'un mot dans une phrase
 
-Reprenez la collection ci-dessus et recherchez chaque letter et sa position dans la collection.
+Reprenez la collection ci-dessus et recherchez maintenant toute les occurences d'une lettre donnée dans la collection.
 
-Vous utiliserez la syntaxe dictionnaire suivante pour le résultat de la recherche :
+Pour récupérer ces informations utiliser la structure de données suivante :
 
 ```python
 result = {'letter': 7, 'pos': [6, 11, 13, 16]}
 ```
 
-Pour accéder/modifier à une valeur d'un dictionnaire :
+Rappel : pour accéder/modifier à une valeur d'un dictionnaire :
 
 ```python
 result['letter']
