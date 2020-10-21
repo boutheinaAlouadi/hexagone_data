@@ -235,6 +235,14 @@ Si vous avez terminé cet exercice un autre exercice intéressant consiste à co
 [ ['i', 4], ['m', 1], ['s', 4], ... ]
 ```
 
+
+# Exercice Comptez le nombre de séquence dans une chaîne de caractères
+
+```python
+seq = "abc"
+alphabet = "abcdeabcfghijklmnabcopabcqrstabcabcjshslabc"
+```
+
 ## Compréhension de liste 
 
 Elles permettent la construction de liste de manière concise. 
