@@ -229,6 +229,12 @@ s = 'mississippi'
 count_letter('i', s) # 4
 ```
 
+Si vous avez terminé cet exercice un autre exercice intéressant consiste à compter le nombre d'occurence de chaque caractères d'une phrase. Définissez cette fonction, vous l'appelerez **count_letters**. Pensez à la manière dont vous allez retourner votre recherche, vous pouvez par exemple utiliser une liste de liste comme suit :
+
+```python
+[ ['i', 4], ['m', 1], ['s', 4], ... ]
+```
+
 ## Compréhension de liste 
 
 Elles permettent la construction de liste de manière concise. 
